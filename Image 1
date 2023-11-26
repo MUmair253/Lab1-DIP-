@@ -1,0 +1,7 @@
+#Reading tiff image
+import rasterio
+from rasterio.plot import show
+from PIL import Image
+img = Image.open("C:\\Users\\abc\\Desktop\\Compressed\\Umair\\HH-ALPSRP247640500-H2.2_UA.tif")
+show(img)
+pixels = img.load()
